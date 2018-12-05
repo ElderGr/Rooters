@@ -1,0 +1,143 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  align-items: center;
+  background-image: linear-gradient(to bottom right, #e02a2a, black);
+  box-sizing: border-box;
+  display: flex;
+  height: 65pt;
+  justify-content: center;
+  padding: 0 7%;
+}
+
+#logo {
+  height: 130px;
+  width: 130px;
+}
+
+header div:nth-child(2) { /* <- Problema, solução, pessoas */
+  align-items: center;
+  display: none;
+  font-family: 'Playfair Display', serif;
+  justify-content: space-evenly;
+  width: 42%;
+  
+}
+
+header div:nth-child(2) a{
+  color: white;
+  font-size: 1.2em;
+  font-weight: 900;
+  padding: 6%;
+  text-decoration: none;
+  transition: 0.7s;
+}
+
+header div:nth-child(2) a:hover {
+  color: brown;
+  transition: 0.7s;
+}
+
+.menu-hamburguer { /* Não é necessário mexer */
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  right: 10px;
+  width: 30px;
+}
+
+.traco {
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  height: 3px;
+  margin: 3.75px 0;
+  transition: 0.5s;
+  width: 100%;
+}
+
+
+.traco-1, .traco-3 {
+  transform-origin: center right;
+}
+
+/* Todas as classes ".ativo" só funcionam quando o menu hamburgues é clicado com JS */
+.menu-hamburguer.ativo .traco-1 {
+  transform: rotateZ(-45deg);
+}
+
+.menu-hamburguer.ativo .traco-2 {
+  opacity: 0;
+}
+
+.menu-hamburguer.ativo .traco-3 {
+  transform: rotateZ(45deg);
+}
+
+
+.menu-mobile a{ /* decoração dos links da nav*/
+  color: white;
+  font-size: 1.2em;
+  font-weight: 900;
+  text-decoration: none;
+  transition: 0.7s
+}
+.menu-mobile a:hover{
+  color: brown;
+  transition: 0.7s;
+}
+
+
+.menu-mobile{ /* estilo do menu mobile, porém só aparece quando clicado*/
+  align-items: center;
+  background-color: black;
+  display: none;
+  flex-flow: column;
+  height: 100vh;
+  justify-content: space-around;
+  position: absolute;
+  right: 0;  
+  transition: 1s;
+  width: 65vw;
+  
+}
+.menu-mobile.ativo{
+  display: flex;
+}
+
+
+
+.menu-hamburguer.ativo .traco-1 { 
+  transform: rotateZ(-45deg);
+}
+
+.menu-hamburguer.ativo .traco-2 {
+  opacity: 0;
+}
+
+.menu-hamburguer.ativo .traco-3 {
+  transform: rotateZ(45deg);
+}
+
+@media only screen and (min-width: 565px){ /* antes de 565px de largura serão aplicados os seguintes filtros */
+  header div:nth-child(2){
+    display: flex;
+  }
+
+  .menu-hamburguer{
+    display: none;
+  }
+
+  header {
+    justify-content: space-between;
+  }
+
+  .menu-mobile.ativo{
+    display: none;
+  }
+}

@@ -1,0 +1,42 @@
+body {
+    display: flex; 
+}
+
+footer {
+    display: flex; 
+    justify-content: space-between;
+}
+
+.fotos ul li img {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+
+.fotos ul {
+    list-style:none;
+}
+
+.fotos ul li { 
+    display: inline;
+}
+.contato ul li img {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+
+.contato ul {
+    list-style:none;
+}
+
+.contato ul li { 
+    display: inline;
+}
+
+.imagens:hover {
+    background-color:#00a781;
+}
+
+
+
