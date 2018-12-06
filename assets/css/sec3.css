@@ -53,6 +53,11 @@ body{
     padding: 0;
 }
 
+#sec3 > div:nth-child(2) p:nth-child(2){
+    text-align: center;
+    padding: 3% 0;
+}
+
 #botao{
     align-items: center;
     display: flex;
@@ -155,6 +160,10 @@ body{
     #comidas{
         width: 94vw;
         height: 12vw;
+    }
+
+    #sec3{
+        padding: 10% 5% 20% 5%;
     }
 }
 
