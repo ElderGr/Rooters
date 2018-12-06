@@ -1,0 +1,113 @@
+
+/* sec1 style -------------*/
+#Folder{
+    width: 100%;
+    height: 40vw;
+    display: flex;
+    padding: 6.3% 0 0 0;
+    margin: 0 0;
+}
+
+
+
+#imgFolder{
+    width: 100%;
+    height: 100%;
+}
+
+#introTexto{
+    color: rgb(255, 255, 255);
+    width: 35vw;
+    height: 40vw;   
+    font-family: 'Paytone One', sans-serif;
+    font-size: 28pt;
+    font-weight: bold;
+    background-color: black;
+}
+
+#introTexto>p{
+  padding: 14% 8%;
+  text-align: center;
+
+    -webkit-animation: fadeIn 2s ease-in-out;
+    -moz-animation: fadeIn 2s ease-in-out;
+    -o-animation: fadeIn 2s ease-in-out;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@media only screen and (max-width: 554px){ 
+
+    #Folder{
+        padding: 15% 0 0 0;
+    }
+    
+    #introTexto{
+     font-size: 12pt;
+     width: 100vw;
+    }
+
+    #introTexto>p{
+        padding: 5% 15%;
+    }
+}
+
+@media only screen and (min-width: 555px) and (max-width: 799px){ 
+
+    #Folder{
+        padding: 10% 0 0 0;
+    }
+
+    #introTexto{
+        font-size: 14pt;
+        width: 100vw;
+    }   
+
+    #introTexto>p{
+        padding: 14% 15%;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 799px){ 
+
+    #Folder{
+        padding: 10% 0 0 0;
+    }
+
+    #introTexto{
+        font-size: 16pt;
+        width: 100vw;
+    }
+
+    #introTexto>p{
+        padding: 14% 15%;
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1110px){ 
+
+    #introTexto{
+        font-size: 24pt;
+        width: 100vw;
+    }
+
+}
+
+
+@-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; } 
+    }
+    @-moz-keyframes fadeIn {
+    0% { opacity: 0;}
+    100% { opacity: 1; }
+    }
+    @-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+    }
+    @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+    }
+
+    

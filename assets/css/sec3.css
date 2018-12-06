@@ -1,0 +1,169 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+#titulo{
+    /* font-family: 'Roboto Slab', serif; */
+    font-size: 25pt;
+    letter-spacing: 1px;
+    /* margin-bottom: 10px; */
+    transition: 0.3s;
+}
+
+#titulo:hover{
+    color: rgb(167, 24, 24);
+    letter-spacing: 3px;
+    transition: 0.3s;
+}
+
+#sec3{
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    height: 50vw; 
+}
+
+#sec3 > div:nth-child(1){
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0 0;
+}
+
+#sec3 > div:nth-child(2){
+    background-color: #00000017;
+    /* margin: 0 25px; */
+    padding: 5% 5%;
+    transition: 1s;
+    width: 70vw;
+    border-radius: 20px;
+}
+
+#sec3 > div:nth-child(2):hover{
+    background-color: #00a781;
+    color: white;
+    transition: 0.5s;
+}
+
+#sec3 > div:nth-child(2) p{
+    /* font-family: 'Roboto Slab', serif; */
+    margin: 0;
+    padding: 0;
+}
+
+#botao{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 60px;
+    font-family: 'Paytone One', sans-serif;
+}
+
+#botao button{
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 14px 20px rgba(0, 0, 0, 0.29);
+    color: #000;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: 700;
+    height: 55px;
+    letter-spacing: 1px;
+    outline: none;
+    transition: 0.3s;
+    width: 180px;
+    margin-top: 15px;
+    
+}
+
+#botao button:hover{
+    background-color: #00a781;
+    box-shadow: 0px 17px 20px rgba(0, 0, 0, 0.72);
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+#comidas{
+    align-items: center;
+    display: flex;
+    height: 15%;
+    justify-content: center;
+    position: relative;
+    top: 10px;
+    width: 70%;
+}
+
+.comidas-linha{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.imagens-comida{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /* animation: 1s sobe linear infinite;
+    animation-delay: 0.5s */
+}
+
+.imagens-comida.grande{
+    transform: translateY(20%);
+    /* animation: 1s sobe linear infinite; */
+}
+
+@keyframes sobe {
+    0%{left: 0px; height: 101%; width: 101%}
+    20%{right: 1%; height: 100%; width: 100%}
+    40%{left: 2%; height: 101%; width: 101%}
+    60%{right: -1%; height: 100%; width: 100%}
+    80%{left: -2%; height: 101%; width: 101%}
+    100%{right: 0%; height: 100%; width: 100%}
+}   
+
+
+
+
+@media only screen and (max-width: 510px){
+    
+    #comidas{
+        width: 90vw;
+        height: 30vw;
+    }
+
+    #sec3{
+        padding: 10% 5% 18% 5%;
+    }
+}
+
+@media only screen and (min-width: 511px) and (max-width: 590px){
+    #comidas{
+        width: 90vw;
+        height: 20vw;
+    }
+
+    #sec3{
+        padding: 10% 5% 18% 5%;
+    }
+}
+
+@media only screen and (min-width: 591px) and (max-width: 1200px){
+    #comidas{
+        width: 94vw;
+        height: 12vw;
+    }
+}
+
+
+@media only screen and (max-width: 1200px){
+    #sec3{
+        height: 90vw;
+        
+    }
+
+    
+}
