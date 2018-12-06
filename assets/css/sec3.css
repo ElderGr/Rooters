@@ -22,7 +22,7 @@ body{
     display: flex;
     flex-flow: column;
     justify-content: center;
-    height: 50vw; 
+    height: 60vw; 
 }
 
 #sec3 > div:nth-child(1){
@@ -63,7 +63,7 @@ body{
     display: flex;
     justify-content: center;
     position: relative;
-    top: 60px;
+    top: 5%;
     font-family: 'Paytone One', sans-serif;
 }
 
