@@ -4,12 +4,13 @@
     background-color: #04cc68;
     box-sizing: border-box;
     display: flex;
-    height: 65pt;
+    height: 13.5%;
     justify-content: center;
     padding: 0 7%;
     position: fixed;
     width: 100%;
     justify-content: space-between;
+    /* font-family: 'Roboto Slab', serif; */
     z-index: 999999;
   }
   
@@ -102,7 +103,7 @@
     transform: translateX(12em);
     transition: transform 0.3s linear;
     opacity: 0; 
-    height: 105vw;
+    height: 112vw;
     justify-content: space-around;
     position: absolute;
     top: 100%;

@@ -4,10 +4,10 @@ body{
 }
 
 #titulo{
-    /* font-family: 'Roboto Slab', serif; */
+    font-family: 'Roboto Slab', serif;
     font-size: 25pt;
     letter-spacing: 1px;
-    /* margin-bottom: 10px; */
+    font-family : 'Paytone One', sans-serif;
     transition: 0.3s;
 }
 
@@ -23,6 +23,7 @@ body{
     flex-flow: column;
     justify-content: center;
     height: 60vw; 
+    font-family: 'Nanum Myeongjo', serif;
 }
 
 #sec3 > div:nth-child(1){
@@ -35,10 +36,12 @@ body{
 #sec3 > div:nth-child(2){
     background-color: #00000017;
     /* margin: 0 25px; */
-    padding: 5% 5%;
+    padding: 2% 5%;
     transition: 1s;
-    width: 70vw;
+    width: 55vw;
     border-radius: 20px;
+    font-size: 14pt;
+    word-spacing: 0.4vw;
 }
 
 #sec3 > div:nth-child(2):hover{
@@ -135,24 +138,30 @@ body{
 
 @media only screen and (max-width: 510px){
     
+    #titulo{
+        margin: 5% 0;
+    }
+
     #comidas{
         width: 90vw;
-        height: 30vw;
+        height: 15vw;
     }
 
     #sec3{
         padding: 10% 5% 18% 5%;
+        height: 100%;
     }
 }
 
 @media only screen and (min-width: 511px) and (max-width: 590px){
     #comidas{
         width: 90vw;
-        height: 20vw;
+        height: 15vw;
     }
 
     #sec3{
         padding: 10% 5% 18% 5%;
+        height: 100%;
     }
 }
 
@@ -163,16 +172,10 @@ body{
     }
 
     #sec3{
-        padding: 10% 5% 20% 5%;
+        padding: 0 5% 10% 5%;
+        height: 100%;
     }
 }
 
 
-@media only screen and (max-width: 1200px){
-    #sec3{
-        height: 90vw;
-        
-    }
 
-    
-}
